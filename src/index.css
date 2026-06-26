@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Nunito:wght@400..800&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-bobble: "DynaPuff", ui-sans-serif, system-ui, sans-serif;
+  --animate-shimmer: shimmer 2s infinite linear;
+  --animate-laserScan: laserScan 2s linear infinite;
+  --animate-loadingBar: loadingBar 2s ease-in-out forwards;
+
+  @keyframes shimmer {
+    0% { transform: translateX(-100%) skewX(-12deg); }
+    100% { transform: translateX(200%) skewX(-12deg); }
+  }
+  @keyframes laserScan {
+    0% { top: 0%; opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { top: 100%; opacity: 0; }
+  }
+  @keyframes loadingBar {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+}

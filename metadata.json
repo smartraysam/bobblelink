@@ -1,0 +1,8 @@
+{
+  "name": "Remix: VIP Link-in-Bio",
+  "description": "A sleek, dark-mode link-in-bio page with an exclusive VIP scanner CTA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
